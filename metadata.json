@@ -1,0 +1,6 @@
+{
+  "name": "Food Frenzy: Cooking Adventure",
+  "description": "A vibrant culinary cooking and restaurant management adventure with dynamic kitchen stations, customer orders, recipe progression, and upgrades.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

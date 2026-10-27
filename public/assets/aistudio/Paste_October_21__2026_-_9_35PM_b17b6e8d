@@ -1,0 +1,1025 @@
+# FOOD FRENZY — COMPLETE PROFESSIONAL GAME DEVELOPMENT MASTER INSTRUCTIONS
+
+## 1. GAME OVERVIEW AND CORE CONCEPT
+
+Create a complete, polished, visually stunning, highly engaging food-cooking and restaurant-management game called "Food Frenzy: Cooking Adventure."
+
+The game should combine fast-paced cooking, restaurant management, ingredient preparation, customer service, food customization, time-based challenges, restaurant upgrades, unlockable recipes, and rewarding gameplay progression.
+
+The player starts as the owner of a small, charming food shop and gradually transforms it into a famous restaurant empire.
+
+The game must feel like a premium-quality casual cooking game with beautiful graphics, smooth animations, responsive controls, satisfying sound effects, and an intuitive user interface.
+
+The final result must be a functional, playable game rather than a static mockup or a collection of decorative screens.
+
+### Primary Objectives
+
+- Create visually attractive, realistic-looking or high-quality stylized food.
+- Make cooking interactions satisfying and easy to understand.
+- Support mobile phones, tablets, laptops, and desktop computers.
+- Implement touch, hold, drag, drop, and mouse-based interactions.
+- Provide meaningful challenges that become progressively harder.
+- Reward players with coins, experience points, achievements, and unlockable content.
+- Maintain smooth performance across different screen sizes.
+- Use professional animations, lighting, shadows, particles, and transitions.
+- Keep the game accessible, enjoyable, and understandable for new players.
+
+## 2. VISUAL STYLE AND ART DIRECTION
+
+Use a premium stylized 3D-inspired visual style with colorful food, appealing materials, soft lighting, realistic-looking textures, and clean compositions.
+
+The environment should look warm, inviting, cheerful, and delicious.
+
+Food must be the visual centerpiece. Burgers should have glossy buns, fresh lettuce, juicy patties, melted cheese, and detailed toppings. Pizza should feature bubbling cheese, colorful vegetables, and a golden crust. Desserts should have smooth frosting, attractive decorations, and appealing colors.
+
+Use carefully balanced colors such as warm orange, tomato red, creamy white, fresh green, golden yellow, and rich brown.
+
+### Visual Requirements
+
+1. Use soft shadows beneath food items and kitchen objects.
+2. Add highlights to glossy ingredients, sauces, drinks, and cooking surfaces.
+3. Use subtle depth, layered backgrounds, and environmental lighting.
+4. Animate steam rising from hot food.
+5. Add small sparks, bubbles, sizzling effects, and gentle smoke when appropriate.
+6. Use smooth hover effects for interactive objects.
+7. Give buttons satisfying press animations.
+8. Use consistent typography, spacing, corner radii, and visual hierarchy.
+9. Ensure text remains readable against every background.
+10. Avoid excessive visual clutter, flashing elements, or distracting effects.
+
+Every screen must feel designed by a professional game UI/UX designer.
+
+Do not rely on random colors, mismatched art styles, low-quality food icons, or generic unstyled HTML elements.
+
+## 3. GAME START SCREEN
+
+Create an attractive main menu with a beautifully illustrated restaurant kitchen in the background.
+
+Display the game logo prominently at the top or center.
+
+The background should feature a chef preparing food, a steaming pan, colorful ingredients, and a welcoming restaurant environment.
+
+Use gentle ambient animations, such as steam rising, lights glowing softly, ingredients moving slightly, and background objects animating naturally.
+
+### Main Menu Buttons
+
+- Play Game
+- Continue
+- Restaurant
+- Recipe Book
+- Daily Challenges
+- Achievements
+- Settings
+- How to Play
+
+Each button must have a distinct visual state: normal, hovered, pressed, disabled, and focused.
+
+The Play Game button should be visually prominent.
+
+When Play Game is selected, transition smoothly into the restaurant map or first cooking level.
+
+The Continue button should resume the latest saved progression if save data exists. Otherwise, start a new game or guide the player to the first level.
+
+Include a short, skippable introduction explaining that the player is starting a small restaurant and must serve customers to grow the business.
+
+## 4. CORE GAMEPLAY LOOP
+
+The core gameplay loop must be easy to learn but difficult to master.
+
+The basic sequence is:
+
+1. A customer arrives at the restaurant.
+2. The customer displays an order bubble.
+3. The player examines the requested food and ingredients.
+4. The player prepares the ingredients.
+5. The player cooks the required items.
+6. The player assembles the correct meal.
+7. The player places the completed order on the serving counter.
+8. The order is delivered to the customer.
+9. The player earns coins, experience, and customer satisfaction.
+10. The next customer arrives.
+
+Each successful order should provide immediate visual and audio feedback.
+
+Correct orders should produce a pleasant success animation, a small burst of particles, and a floating coin reward.
+
+Incorrect orders should trigger gentle feedback and an opportunity to correct the mistake whenever the level rules permit.
+
+The player must always understand what to do next.
+
+## 5. RESTAURANT KITCHEN LAYOUT
+
+Create a visually organized kitchen with distinct interactive stations.
+
+### Station A: Ingredient Preparation
+
+Include:
+
+- Cutting board
+- Knife station
+- Vegetable preparation area
+- Ingredient containers
+- Bread and bun station
+- Meat preparation station
+
+Allow players to select, move, and prepare ingredients through interactive actions.
+
+For example, dragging a tomato to the cutting board should begin a cutting interaction if the game rules require chopped tomato.
+
+### Station B: Cooking Station
+
+Include:
+
+- Stove
+- Frying pan
+- Grill
+- Deep fryer
+- Oven
+- Boiling pot
+
+Each station should support different cooking methods.
+
+Examples:
+
+- Grill burger patties.
+- Fry French fries.
+- Bake pizza.
+- Toast bread.
+- Boil pasta.
+- Heat soup.
+
+Food should visibly change while cooking.
+
+Raw meat should gradually become cooked. Cheese should melt. Fries should turn golden. Pizza crust should become baked.
+
+Do not allow players to serve food before the required cooking stage is completed.
+
+### Station C: Assembly Counter
+
+Provide a clean workspace where ingredients can be combined.
+
+For example, a burger may require:
+
+1. Bottom bun
+2. Cooked patty
+3. Cheese
+4. Lettuce
+5. Tomato
+6. Top bun
+
+The player must follow the selected recipe's requirements.
+
+Show a subtle visual guide or ingredient checklist while assembling the order.
+
+### Station D: Serving Counter
+
+Display completed dishes in a clearly visible serving area.
+
+Players must drag or move the correct finished dish to the matching customer's serving target.
+
+Validate the order before accepting it.
+
+Award coins and satisfaction only when the required order is successfully completed.
+
+### Station E: Drinks and Desserts
+
+Include a separate area for beverages and optional side items.
+
+Possible items include:
+
+- Lemonade
+- Orange juice
+- Milkshakes
+- Coffee
+- Ice cream
+- Cupcakes
+- Donuts
+
+Customers may request a main dish with a drink or dessert as levels become more challenging.
+
+## 6. FOOD INGREDIENT SYSTEM
+
+Create a reusable ingredient system that tracks each ingredient's identity, state, quality, quantity, and availability.
+
+Every ingredient must have a recognizable visual representation.
+
+Suggested ingredient categories:
+
+**Vegetables:** Tomato, lettuce, onion, cucumber, bell pepper, mushroom.
+
+**Proteins:** Chicken, beef patty, fish fillet, egg, plant-based patty.
+
+**Bakery:** Burger buns, bread slices, pizza dough, pizza crust.
+
+**Dairy:** Cheese slices, mozzarella, milk, butter, cream.
+
+**Condiments:** Ketchup, mustard, mayonnaise, barbecue sauce.
+
+**Sides:** French fries, onion rings, salad.
+
+**Desserts:** Ice cream, cake, cookies, donuts.
+
+**Drinks:** Water, lemonade, juice, coffee, milkshake.
+
+Each ingredient should support appropriate interactions such as selection, dragging, chopping, cooking, combining, and placement.
+
+Ingredients must snap naturally into valid stations.
+
+If an ingredient is dropped in an invalid area, it should return smoothly to its previous position or move to an appropriate temporary holding area.
+
+Never let ingredients become permanently lost outside the playable area.
+
+## 7. MOUSE, TOUCH, HOLD, AND DRAG CONTROLS
+
+This is one of the most important requirements.
+
+The game must support intuitive controls on both desktop and mobile devices.
+
+### Desktop Controls
+
+- Left-click to select food, buttons, ingredients, and kitchen stations.
+- Click and hold to pick up draggable objects.
+- Drag the mouse to move ingredients.
+- Release the mouse button to drop an item.
+- Click a cooking station to interact with it.
+- Use optional keyboard shortcuts for supported actions.
+- Escape opens or closes the pause menu where appropriate.
+- Prevent accidental browser text selection during gameplay.
+- Keep the mouse cursor and drag behavior responsive.
+
+### Mobile and Tablet Controls
+
+- Tap to select ingredients and UI buttons.
+- Press and hold to pick up draggable food objects.
+- Drag with one finger to move ingredients.
+- Release to drop an ingredient into a valid station.
+- Use large, comfortable touch targets.
+- Provide clear visual feedback when an object is picked up.
+- Keep the player's finger from obscuring important drop targets where practical.
+- Prevent unwanted page scrolling and browser gestures over the active game area.
+- Ensure controls work in both portrait and landscape layouts.
+
+### Drag-and-Drop Behavior
+
+When an object is selected:
+
+1. Slightly enlarge it.
+2. Add a soft shadow or highlight.
+3. Move it smoothly with the pointer or finger.
+4. Highlight valid destination areas.
+5. Display a subtle snap preview when near a valid target.
+6. On release, validate the destination.
+7. Snap the object into place if valid.
+8. Play a subtle sound and animation.
+9. If invalid, return it to a safe position with a gentle animation.
+
+Implement pointer handling in a way that supports both mouse and touch, preferably using Pointer Events or the game engine's equivalent unified input system.
+
+Handle pointer cancellation, lost pointer capture, interrupted drags, and switching browser focus gracefully.
+
+Do not allow a single drag to trigger duplicate cooking or serving actions.
+
+## 8. COOKING MECHANICS AND TIMING
+
+Cooking must feel interactive rather than automatic.
+
+Each cooking item should have its own preparation duration and acceptable timing window.
+
+Example starting values:
+
+- Toast bread: 3 seconds.
+- Fry an egg: 5 seconds.
+- Grill a burger patty: 8 seconds.
+- Fry French fries: 7 seconds.
+- Bake a pizza: 12 seconds.
+- Prepare a milkshake: 4 seconds.
+
+These are adjustable starting values, not fixed requirements.
+
+Display a clear progress indicator above each active station.
+
+Use visual changes to communicate cooking progress.
+
+For example:
+
+- Raw food has a lighter or uncooked appearance.
+- Properly cooked food gains its finished color and texture.
+- Overcooked food becomes darker and may emit smoke.
+
+The player should be able to collect completed food before it burns.
+
+Introduce overcooking gradually. Early tutorial levels should be forgiving, while later levels may require more precise timing.
+
+Never make cooking timers so strict that the game becomes frustrating or impossible on mobile devices.
+
+Provide accessible difficulty options where appropriate.
+
+## 9. CUSTOMER ORDERS AND BEHAVIOR
+
+Create multiple customer characters with distinct visual appearances, clothing, expressions, and personalities.
+
+Customers should enter the restaurant, wait in a queue, display an order, react to waiting time, receive food, and leave after their order is resolved.
+
+Customer animations may include:
+
+- Walking into the restaurant.
+- Looking at the menu.
+- Smiling when ordering.
+- Checking the time while waiting.
+- Looking excited when food arrives.
+- Celebrating a perfect order.
+- Leaving happily after being served.
+
+Each order must display the required meal clearly.
+
+Example:
+
+CUSTOMER ORDER
+- One cheeseburger
+- One serving of French fries
+- One lemonade
+
+The order interface should display recognizable food icons and clear completion indicators.
+
+As the player progresses, customers may request more complicated combinations.
+
+Use a patience meter that decreases gradually over time.
+
+Delivering the correct order quickly increases the reward. Delayed orders may receive fewer bonus coins.
+
+Customer patience should never be the only measure of success. The player must still have a reasonable opportunity to recover from mistakes.
+
+## 10. CUSTOMER SATISFACTION AND ORDER VALIDATION
+
+Every order must be validated against its recipe and customer request.
+
+Check:
+
+- Correct main dish.
+- Required ingredients.
+- Required cooking states.
+- Correct side dishes.
+- Correct drinks.
+- Correct quantity.
+- Any required customizations.
+
+If the order is incomplete, explain what is missing.
+
+If the dish is overcooked or incorrect, apply the rules of the current level.
+
+Use a simple three-star scoring system.
+
+**Three stars:** Most orders completed accurately and efficiently, with strong customer satisfaction.
+
+**Two stars:** Level completed with moderate delays or a few mistakes.
+
+**One star:** Level completed with limited performance but the minimum objective achieved.
+
+The precise scoring thresholds should be configurable and tuned during playtesting.
+
+Provide a clear end-of-level summary explaining the player's results.
+
+## 11. LEVEL DESIGN AND PROGRESSION
+
+Create a campaign containing at least 30 planned levels, with the architecture supporting additional levels.
+
+Organize progression into themed stages.
+
+### Stage 1: Beginner Burger Shop
+
+Levels 1–5 introduce:
+
+- Basic ingredient selection.
+- Simple burgers.
+- French fries.
+- Customer order bubbles.
+- Drag-and-drop serving.
+- Basic coin rewards.
+
+### Stage 2: Pizza Corner
+
+Levels 6–10 introduce:
+
+- Pizza dough.
+- Sauce spreading.
+- Cheese and toppings.
+- Oven timing.
+- Different pizza recipes.
+
+### Stage 3: Cafe and Drinks
+
+Levels 11–15 introduce:
+
+- Coffee.
+- Lemonade.
+- Milkshakes.
+- Desserts.
+- Multi-item orders.
+
+### Stage 4: International Kitchen
+
+Levels 16–20 introduce:
+
+- Pasta.
+- Fried chicken.
+- Rice bowls.
+- Sandwiches.
+- More complicated ingredient combinations.
+
+### Stage 5: Master Chef Challenge
+
+Levels 21–30 introduce:
+
+- Multiple simultaneous orders.
+- Faster customer queues.
+- Complex recipes.
+- Limited ingredient challenges.
+- Special customers.
+- Timed cooking challenges.
+- Higher scoring requirements.
+
+Every level must introduce a meaningful variation.
+
+Avoid simply increasing speed without introducing interesting decisions.
+
+## 12. RESTAURANT MANAGEMENT AND UPGRADES
+
+Allow players to spend earned coins on improvements.
+
+Possible upgrades include:
+
+- Faster oven.
+- Larger grill.
+- Improved fryer.
+- Additional preparation counter.
+- Faster drink machine.
+- Extra serving space.
+- Better restaurant decorations.
+- More comfortable customer seating.
+- Additional kitchen equipment.
+
+Each upgrade must have a visible effect.
+
+For example, upgrading the oven should reduce baking time or improve its capacity.
+
+Restaurant decoration upgrades should visibly change the environment.
+
+Create a restaurant progression screen showing:
+
+- Current restaurant level.
+- Available upgrades.
+- Upgrade costs.
+- Current coins.
+- Expected upgrade benefits.
+- Locked upgrades and unlock requirements.
+
+All purchases must validate that the player has sufficient currency.
+
+Do not charge the player twice for one purchase.
+
+## 13. COINS, EXPERIENCE, AND REWARDS
+
+Create a balanced reward system.
+
+Players earn coins from completed orders, level completion, performance bonuses, achievements, and optional daily challenges.
+
+Example reward structure:
+
+- Correct basic order: 10–20 coins.
+- Fast-service bonus: 5–15 coins.
+- Perfect order streak: additional bonus.
+- Level completion: level-specific reward.
+- Three-star completion: premium coin bonus.
+
+All values should be configurable.
+
+Experience points increase the player's chef level.
+
+Unlock new recipes, restaurant themes, kitchen equipment, and special challenges as the chef level increases.
+
+Reward animations should be brief and satisfying.
+
+Use floating coins, progress bars, subtle confetti, and celebratory sounds.
+
+Avoid excessive popups that interrupt gameplay.
+
+## 14. GAME MODES
+
+Implement multiple game modes where appropriate.
+
+### Campaign Mode
+
+Progress through increasingly difficult restaurant levels.
+
+### Time Attack
+
+Serve as many valid customer orders as possible before the timer ends.
+
+### Endless Service
+
+Continue serving customers until the player reaches a failure condition or chooses to stop.
+
+Difficulty should increase gradually.
+
+### Daily Challenge
+
+Offer a rotating challenge with a specific objective, such as preparing ten burgers or serving five perfect orders.
+
+If online services are unavailable, use deterministic local challenges that rotate according to a local date or saved progression rules.
+
+### Practice Mode
+
+Allow players to learn recipes and controls without strict customer timers.
+
+### Perfect Chef Challenge
+
+Require accurate preparation, cooking, assembly, and serving to achieve a high score.
+
+Each mode must have clear rules, objectives, and completion conditions.
+
+## 15. RECIPE BOOK
+
+Create an attractive recipe collection interface.
+
+Each recipe card should include:
+
+- Food illustration.
+- Recipe name.
+- Required ingredients.
+- Preparation steps.
+- Cooking time.
+- Difficulty rating.
+- Unlock requirement.
+- Best possible score.
+
+Example recipe: Classic Cheeseburger.
+
+Ingredients:
+- Burger bun.
+- Beef patty.
+- Cheese.
+- Lettuce.
+- Tomato.
+- Optional sauce.
+
+Preparation:
+1. Prepare the bun.
+2. Grill the patty.
+3. Add cheese.
+4. Assemble the ingredients.
+5. Place the top bun.
+6. Serve to the customer.
+
+Recipes should be unlocked through level progression or other clearly explained gameplay requirements.
+
+## 16. USER INTERFACE AND HUD
+
+Design a clean, attractive heads-up display that does not obstruct the cooking area.
+
+During gameplay, show:
+
+- Current level.
+- Remaining time, if applicable.
+- Coins.
+- Active customer orders.
+- Customer patience.
+- Current score.
+- Objective progress.
+- Pause button.
+- Optional hints.
+
+Use clear icons with labels when necessary.
+
+Important controls must be large enough for touch interaction.
+
+Keep the cooking area visually dominant.
+
+Use readable text, appropriate contrast, and consistent spacing.
+
+On small screens, simplify secondary information rather than shrinking every element until it becomes unreadable.
+
+## 17. RESPONSIVE MOBILE AND DESKTOP LAYOUT
+
+The game must adapt its layout intelligently to different screen sizes.
+
+### Mobile Portrait
+
+- Place customer orders in a compact top section.
+- Keep the primary cooking station in the central area.
+- Put frequently used ingredients near the lower part of the screen.
+- Use a compact navigation and resource bar.
+- Keep the serving counter accessible without excessive scrolling.
+- Prevent important objects from being hidden behind interface panels.
+
+### Mobile Landscape
+
+- Use the additional horizontal space to show the kitchen and customer queue together.
+- Keep controls reachable with thumbs where practical.
+- Avoid placing critical buttons at screen edges where accidental system gestures may occur.
+
+### Tablet
+
+- Use a wider kitchen layout.
+- Display more ingredients and customer orders simultaneously.
+- Increase object spacing when space allows.
+
+### Desktop
+
+- Use a spacious kitchen work area.
+- Keep order cards in a dedicated sidebar or top panel.
+- Support mouse dragging and optional keyboard shortcuts.
+- Use the available screen space without stretching food illustrations unnaturally.
+
+Use responsive layout rules rather than hardcoded positions that only work at one resolution.
+
+Maintain consistent proportions, safe margins, readable text, and usable touch targets.
+
+Support browser resizing and orientation changes during gameplay.
+
+## 18. ANIMATIONS AND VISUAL FEEDBACK
+
+Every important player action must produce immediate feedback.
+
+Implement:
+
+- Button hover and press animations.
+- Food pickup and drop animations.
+- Ingredient snapping.
+- Knife-cutting animations.
+- Pan sizzling.
+- Oven glow.
+- Rising steam.
+- Food completion effects.
+- Customer reaction animations.
+- Coin collection animations.
+- Level-completion celebrations.
+- Smooth screen transitions.
+- Upgrade purchase feedback.
+
+Use animation easing that feels natural.
+
+Avoid excessive bounce, long delays, or animations that prevent the player from interacting.
+
+Allow the game to reduce unnecessary visual effects on slower devices.
+
+The game should still be understandable when animations are reduced.
+
+## 19. SOUND DESIGN AND MUSIC
+
+Create a warm, upbeat restaurant atmosphere.
+
+Suggested sound effects:
+
+- Button click.
+- Ingredient pickup.
+- Ingredient placement.
+- Knife chopping.
+- Food sizzling.
+- Frying.
+- Oven completion.
+- Order accepted.
+- Correct dish served.
+- Coins collected.
+- Level completed.
+- Customer celebration.
+- Error feedback.
+
+Use gentle background music that supports concentration.
+
+Provide separate volume controls for:
+
+- Music.
+- Sound effects.
+- Ambient sounds.
+
+Include a mute option.
+
+On mobile browsers, start audio only after a valid user interaction if required by browser audio policies.
+
+Avoid loud, repetitive, or irritating sounds.
+
+## 20. PAUSE MENU AND SETTINGS
+
+The pause menu should provide:
+
+- Resume.
+- Restart Level.
+- Settings.
+- How to Play.
+- Return to Main Menu.
+
+Before restarting or leaving an active level, ask for confirmation if unsaved progress could be lost.
+
+Settings should include:
+
+- Music volume.
+- Sound effect volume.
+- Graphics quality.
+- Reduced motion.
+- Control sensitivity where relevant.
+- Language selection if supported.
+- Gameplay difficulty where supported.
+
+Ensure that opening and closing menus does not create duplicate timers or leave the game in an inconsistent state.
+
+Pause gameplay timers when the game is paused.
+
+## 21. TUTORIAL AND ONBOARDING
+
+Create a guided tutorial for first-time players.
+
+Teach one mechanic at a time.
+
+Tutorial sequence:
+
+1. Identify a customer's order.
+2. Select the correct ingredient.
+3. Drag the ingredient to the preparation area.
+4. Cook the required food.
+5. Assemble the dish.
+6. Move the finished dish to the serving counter.
+7. Deliver it to the correct customer.
+8. Collect the reward.
+
+Use visual highlights, short text instructions, and optional animated hand indicators.
+
+Do not overwhelm players with every feature at once.
+
+Allow experienced players to skip the tutorial.
+
+If the player makes a mistake, offer a helpful hint rather than restarting the entire tutorial.
+
+## 22. SAVE SYSTEM AND PROGRESSION DATA
+
+Save player progress reliably.
+
+Persist the following information where supported:
+
+- Unlocked levels.
+- Completed levels.
+- Star ratings.
+- Coins.
+- Experience points.
+- Chef level.
+- Purchased upgrades.
+- Unlocked recipes.
+- Settings.
+- Achievement progress.
+- Daily challenge state.
+
+For a browser-based offline game, use an appropriate local persistence mechanism such as localStorage or IndexedDB.
+
+For an engine-based game, use the engine's supported save-data system.
+
+Validate saved data before loading it.
+
+Handle missing, corrupted, or outdated save data safely.
+
+Do not reset progress simply because the browser window is resized or the player changes orientation.
+
+If cloud saves are implemented, handle synchronization conflicts carefully and never imply that cloud storage exists when it has not been configured.
+
+## 23. ACCESSIBILITY AND USABILITY
+
+The game should be usable by players with different levels of gaming experience.
+
+Provide:
+
+- High-contrast text.
+- Readable fonts.
+- Clear visual states.
+- Optional reduced-motion mode.
+- Adjustable sound levels.
+- Non-color-only indicators for success and errors.
+- Helpful error messages.
+- A forgiving tutorial.
+- Touch-friendly controls.
+- Adequate button spacing.
+- Keyboard navigation for menus on desktop.
+- Visible focus indicators where applicable.
+
+Do not communicate critical information using color alone.
+
+For example, show a checkmark and a text label when an ingredient is correct, rather than relying only on a green highlight.
+
+## 24. TECHNICAL IMPLEMENTATION
+
+Choose a suitable game technology based on the target environment.
+
+For a browser-based 2D game, use a structured HTML5 game framework or a carefully organized Canvas-based implementation.
+
+For a more elaborate 2D or 3D experience, use an appropriate dedicated game engine.
+
+Separate gameplay logic from presentation and interface code.
+
+Recommended logical modules:
+
+- GameManager
+- LevelManager
+- InputManager
+- DragDropController
+- IngredientManager
+- CookingManager
+- RecipeManager
+- OrderManager
+- CustomerManager
+- RestaurantManager
+- EconomyManager
+- ProgressionManager
+- SaveManager
+- AudioManager
+- UIManager
+- AccessibilityManager
+
+Use reusable data-driven definitions for ingredients, recipes, customers, levels, upgrades, and rewards.
+
+Avoid duplicating logic for every food item.
+
+Use a central game state with explicit states such as:
+
+- MainMenu
+- Tutorial
+- Playing
+- Paused
+- LevelComplete
+- LevelFailed
+- Loading
+
+Prevent impossible state transitions and duplicate actions.
+
+If the implementation uses asynchronous loading or timers, cancel or clean them up when the relevant screen or level ends.
+
+## 25. PERFORMANCE OPTIMIZATION
+
+The game should run smoothly on typical modern phones and desktop computers.
+
+Optimize image sizes, texture usage, animation counts, and background effects.
+
+Use asset compression and appropriately sized textures.
+
+Avoid creating unnecessary objects every frame.
+
+Reuse frequently spawned effects where practical.
+
+Keep input responsive even when several customers and food animations are active.
+
+Provide lower graphics settings for less powerful devices.
+
+Do not sacrifice core gameplay responsiveness for decorative effects.
+
+For browser implementations, prevent unwanted page scrolling while interacting with the game surface and restore normal page behavior outside the active game area.
+
+## 26. ERROR HANDLING AND GAMEPLAY EDGE CASES
+
+Test the following scenarios carefully:
+
+- The player drops an ingredient outside a valid station.
+- The player releases a drag outside the game area.
+- The player switches tabs while dragging.
+- The device rotates during a level.
+- The browser window is resized.
+- A cooking timer finishes while the player is interacting with another item.
+- An order expires while the player is assembling a dish.
+- The player attempts to serve an incorrect meal.
+- The player runs out of coins.
+- The player attempts to purchase the same upgrade twice.
+- The player pauses during cooking.
+- The player restarts a level.
+- The save data is missing or corrupted.
+- Multiple customers request the same dish.
+- The player rapidly clicks or taps the same control.
+- A touch gesture is interrupted by the operating system.
+
+All edge cases must produce predictable results.
+
+Never allow a player to get permanently stuck because an ingredient disappeared, a timer continued incorrectly, or a drag interaction failed.
+
+## 27. ACHIEVEMENTS AND MILESTONES
+
+Create an achievement system with clear requirements and rewards.
+
+Examples:
+
+**First Order:** Complete your first customer order.
+
+**Speed Chef:** Complete several orders within their target time.
+
+**Perfect Service:** Complete a level with high accuracy.
+
+**Burger Master:** Prepare a specified number of burgers.
+
+**Pizza Expert:** Unlock and prepare multiple pizza recipes.
+
+**Restaurant Owner:** Purchase your first upgrade.
+
+**Customer Favorite:** Maintain high customer satisfaction.
+
+**Golden Chef:** Earn a high star rating across a series of levels.
+
+Show achievement progress in a dedicated screen.
+
+Provide a subtle notification when an achievement is unlocked.
+
+## 28. LEVEL COMPLETION SCREEN
+
+At the end of each level, show a polished results screen.
+
+Include:
+
+- Final score.
+- Stars earned.
+- Orders completed.
+- Perfect orders.
+- Average service performance.
+- Coins earned.
+- Experience gained.
+- Newly unlocked content, if any.
+
+Buttons should include:
+
+- Continue.
+- Replay.
+- Restaurant Upgrades.
+- Main Menu.
+
+Celebrate excellent performance with a brief, attractive animation.
+
+Clearly explain any unmet objectives.
+
+Do not hide essential rewards behind unnecessary promotional screens.
+
+## 29. FINAL QUALITY ASSURANCE CHECKLIST
+
+Before considering the game complete, verify every requirement below.
+
+### Gameplay
+
+- The player can complete a full level.
+- Customer orders appear correctly.
+- Ingredients can be selected and moved.
+- Cooking states update correctly.
+- Recipes validate accurately.
+- Completed food can be served.
+- Coins and scores update correctly.
+- Level progression works.
+- Upgrades have real gameplay effects.
+- The save system preserves progression.
+
+### Controls
+
+- Mouse input works on desktop.
+- Touch input works on mobile.
+- Hold-and-drag works reliably.
+- Objects snap into valid stations.
+- Invalid drops recover gracefully.
+- Rapid repeated inputs do not duplicate rewards.
+- Menus and buttons respond immediately.
+
+### Visuals
+
+- Food looks attractive and recognizable.
+- Text is readable.
+- Animations are smooth.
+- Lighting and shadows are consistent.
+- No important UI elements overlap.
+- No ingredients become permanently hidden.
+- The game looks polished at different resolutions.
+
+### Responsiveness
+
+- Small phones are supported.
+- Large phones are supported.
+- Tablets are supported.
+- Desktop browsers are supported.
+- Portrait and landscape layouts are handled.
+- Browser resizing does not break the game.
+- The interface remains usable on touchscreens.
+
+### Reliability
+
+- Pause and resume work.
+- Restart works.
+- Level completion works.
+- Sound settings work.
+- Save data loads safely.
+- Timers do not duplicate.
+- No critical console errors remain.
+- No major gameplay blockers remain.
+
+## 30. FINAL DELIVERY REQUIREMENTS
+
+Deliver a complete and playable Food Frenzy game, not just a design concept.
+
+The final build must include the main menu, tutorial, kitchen gameplay, customer orders, ingredient interactions, cooking mechanics, scoring, coins, levels, upgrades, recipe collection, pause menu, settings, save system, and responsive controls.
+
+Use original or properly licensed visual assets and sound effects.
+
+Do not use broken image links, missing textures, empty buttons, placeholder gameplay, or decorative features that do not function.
+
+If external assets cannot be loaded, provide appropriate local fallbacks.
+
+Ensure the player can start the game, complete a customer order, earn rewards, finish a level, and progress to the next level without encountering a blocking issue.
+
+Prioritize a beautiful visual presentation, satisfying food preparation, responsive controls, clear objectives, and an enjoyable gameplay loop.
+
+The finished experience should feel like a professionally designed casual cooking game that is fun to play on both mobile devices and desktop computers.
